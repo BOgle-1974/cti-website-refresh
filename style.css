@@ -1,0 +1,253 @@
+/* --- Global Resets & Typography --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* --- Modern Navigation Header --- */
+.main-header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h2 {
+    color: #0056b3;
+    font-size: 24px;
+    letter-spacing: 0.5px;
+}
+
+.logo span {
+    font-size: 11px;
+    color: #666;
+    text-transform: uppercase;
+    display: block;
+    margin-top: -4px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #4a5568;
+    margin: 0 15px;
+    font-weight: 500;
+    font-size: 15px;
+    transition: color 0.2s;
+}
+
+.nav-menu a:hover {
+    color: #0056b3;
+}
+
+.search-btn {
+    text-decoration: none;
+    background-color: #e2e8f0;
+    color: #1a202c;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.search-btn:hover {
+    background-color: #cbd5e1;
+}
+
+/* --- Hero Section --- */
+.hero-section {
+    background: linear-gradient(135deg, #f0f4f8 0%, #d9e2ec 100%);
+    padding: 80px 0;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.badge {
+    background-color: #0056b3;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.hero-text h1 {
+    font-size: 40px;
+    color: #102a43;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    color: #486581;
+    margin-bottom: 30px;
+}
+
+.hero-buttons .btn {
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: 600;
+    display: inline-block;
+    margin-right: 15px;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.btn-primary {
+    background-color: #0056b3;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #004494;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #0056b3;
+    border: 2px solid #0056b3;
+}
+
+.btn-secondary:hover {
+    background-color: rgba(0, 86, 179, 0.05);
+    transform: translateY(-2px);
+}
+
+/* --- "Then vs Now" Visual Mockup --- */
+.visual-mockup {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    text-align: center;
+}
+
+.rack-box {
+    width: 100%;
+    padding: 20px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.legacy {
+    background-color: #bcccdc;
+    color: #334e68;
+    border-left: 5px solid #627d98;
+}
+
+.cloud {
+    background-color: #e3fafc;
+    color: #0b7285;
+    border-left: 5px solid #15aabf;
+}
+
+.arrow-bridge {
+    font-weight: bold;
+    color: #0056b3;
+    animation: pulse 2s infinite;
+}
+
+/* --- Smart Modernization Section --- */
+.modernization-section {
+    padding: 80px 0;
+    background-color: #ffffff;
+}
+
+.modernization-section h2 {
+    font-size: 32px;
+    color: #102a43;
+    margin-bottom: 10px;
+}
+
+.section-lead {
+    font-size: 18px;
+    color: #627d98;
+    max-width: 800px;
+    margin: 0 auto 50px auto;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.feature-card {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #e4e7eb;
+    text-align: left;
+    transition: box-shadow 0.2s;
+}
+
+.feature-card:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.feature-card h3 {
+    color: #102a43;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.feature-card p {
+    color: #486581;
+    font-size: 15px;
+}
+
+/* --- Animations & Responsive Breaks --- */
+@keyframes pulse {
+    0% { opacity: 0.6; }
+    50% { opacity: 1; }
+    100% { opacity: 0.6; }
+}
+
+@media (max-width: 960px) {
+    .hero-grid, .features-grid {
+        grid-template-columns: 1fr;
+    }
+    .nav-menu {
+        display: none; /* Keeps mobile simple for a raw blueprint */
+    }
+}
