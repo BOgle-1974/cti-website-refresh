@@ -8,7 +8,6 @@
 </head>
 <body>
 
-    <!-- Modern Navigation Header -->
     <header class="main-header">
         <div class="container header-flex">
             <div class="logo">
@@ -23,12 +22,11 @@
                 <a href="#company">Company</a>
             </nav>
             <div class="header-actions">
-                <a href="#search" class="search-btn">🔍 Search Parts</a>
+                <a href="#search-portal" class="search-btn">🔍 Search Parts / Firmware</a>
             </div>
         </div>
     </header>
 
-    <!-- Hero Section: Elevating the Janus PAC & IIoT Messaging -->
     <section class="hero-section">
         <div class="container hero-grid">
             <div class="hero-text">
@@ -39,11 +37,10 @@
                 </p>
                 <div class="hero-buttons">
                     <a href="#janus" class="btn btn-primary">Explore Janus PAC</a>
-                    <a href="#modernization" class="btn btn-secondary">Smart Modernization Program</a>
+                    <a href="#search-portal" class="btn btn-secondary">Downloads & Tech Support</a>
                 </div>
             </div>
             <div class="hero-visual">
-                <!-- Visual Container for the "Then vs Now" Graphic concept -->
                 <div class="visual-mockup">
                     <div class="rack-box legacy">Legacy 505 Racks</div>
                     <div class="arrow-bridge">➔ Janus PAC (MQTT) ➔</div>
@@ -53,7 +50,6 @@
         </div>
     </section>
 
-    <!-- Smart Modernization Section -->
     <section id="modernization" class="modernization-section">
         <div class="container text-center">
             <h2>Why Migrate When You Can Modernize?</h2>
@@ -75,6 +71,81 @@
             </div>
         </div>
     </section>
+
+    <section id="search-portal" class="search-section">
+        <div class="container">
+            <div class="text-center">
+                <h2>Unified Resource & Firmware Portal</h2>
+                <p class="section-lead">Instant access to technical specifications, manuals, and active firmware revisions.</p>
+            </div>
+
+            <div class="search-wrapper">
+                <input type="text" id="partSearch" placeholder="Type a part number or series (e.g., 2500, Janus, ACP1)..." onkeyup="filterParts()">
+            </div>
+
+            <div class="table-responsive">
+                <table class="search-table">
+                    <thead>
+                        <tr>
+                            <th>Part Number / Product</th>
+                            <th>Category</th>
+                            <th>Status</th>
+                            <th>Latest Firmware</th>
+                            <th>Documentation</th>
+                        </tr>
+                    </thead>
+                    <tbody id="partsTableBody">
+                        </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Mock hardware database matrix matching your production modules
+        const partsDatabase = [
+            { name: "2500P-J750 Janus PAC", category: "Processor", status: "Active", firmware: "v1.24", manual: "User Manual (PDF)" },
+            { name: "2500P-ACP1 Coprocessor", category: "Coprocessor", status: "Mature", firmware: "v3.12", manual: "Tech Advisory (PDF)" },
+            { name: "2550-A I/O Module", category: "Analog Input", status: "Active", firmware: "N/A", manual: "Wiring Guide (PDF)" },
+            { name: "2556-A I/O Module", category: "Analog Output", status: "Active", firmware: "N/A", manual: "Data Sheet (PDF)" },
+            { name: "2500P-RAM Input Simulator", category: "Specialty I/O", status: "Active", firmware: "N/A", manual: "Installation (PDF)" }
+        ];
+
+        function populateTable(data) {
+            const tableBody = document.getElementById("partsTableBody");
+            tableBody.innerHTML = "";
+            
+            if(data.length === 0) {
+                tableBody.innerHTML = `<tr><td colspan="5" style="text-align:center; color:#888; padding:30px;">No matching modules found. Try searching "2500" or "Janus"</td></tr>`;
+                return;
+            }
+
+            data.forEach(part => {
+                const statusClass = part.status.toLowerCase() === 'active' ? 'status-active' : 'status-mature';
+                tableBody.innerHTML += `
+                    <tr>
+                        <td class="part-name"><strong>${part.name}</strong></td>
+                        <td>${part.category}</td>
+                        <td><span class="status-badge ${statusClass}">${part.status}</span></td>
+                        <td><code class="fw-code">${part.firmware}</code></td>
+                        <td><a href="#" class="download-link">💾 ${part.manual}</a></td>
+                    </tr>
+                `;
+            });
+        }
+
+        function filterParts() {
+            const query = document.getElementById("partSearch").value.toLowerCase();
+            const filtered = partsDatabase.filter(part => 
+                part.name.toLowerCase().includes(query) || 
+                part.category.toLowerCase().includes(query)
+            );
+            populateTable(filtered);
+        }
+
+        // Initialize table on load
+        populateTable(partsDatabase);
+    </script>
 
 </body>
 </html>
