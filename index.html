@@ -51,11 +51,11 @@
             <p style="color: #64748b; margin-bottom: 25px; font-size: 15px;">Instant access to technical specifications, manuals, and active firmware revisions.</p>
             
             <!-- Real-time Interactive Search Input -->
-            <input type="text" id="partSearch" placeholder="Type a part number, family, or feature (e.g., Janus, Compact, RBC, Power Supply)...">
+            <input type="text" id="partSearch" placeholder="Type a part number, family, or feature (e.g., Janus, Compact, RBC, Power Supply, Slice)...">
         </div>
 
         <!-- Dynamic Data Grid -->
-        <div class="table-responsive" style="max-width: 900px; margin: 0 auto;">
+        <div class="table-responsive" style="max-width: 1000px; margin: 0 auto; overflow-x: auto;">
             <table class="search-table">
                 <thead>
                     <tr>
@@ -69,14 +69,14 @@
                 <tbody>
                     <!-- === 2500 SERIES CLASSIC: PROCESSORS & COPROCESSORS === -->
                     <tr>
-                        <td class="part-name"><strong>2500P-J750</strong> Janus PAC (3MB)</td>
+                        <td class="part-name"><strong>2500P-J750</strong> Janus PAC (3MB Project Memory)</td>
                         <td>2500 Classic - Processor</td>
                         <td><span class="status-badge status-active">Active</span></td>
                         <td><span class="fw-code">v1.24</span></td>
                         <td><a href="#" class="download-link">User Manual (PDF)</a></td>
                     </tr>
                     <tr>
-                        <td class="part-name"><strong>2500P-J450</strong> Janus PAC (2MB)</td>
+                        <td class="part-name"><strong>2500P-J450</strong> Janus PAC (2MB Project Memory)</td>
                         <td>2500 Classic - Processor</td>
                         <td><span class="status-badge status-active">Active</span></td>
                         <td><span class="fw-code">v1.24</span></td>
@@ -185,7 +185,7 @@
                         <td><a href="#" class="download-link">Wiring Guide (PDF)</a></td>
                     </tr>
 
-                    <!-- === 2500 SERIES CLASSIC: DIGITAL I/O === -->
+                    <!-- === 2500 SERIES CLASSIC: DIGITAL I/O & HIGH DENSITY === -->
                     <tr>
                         <td class="part-name"><strong>2511-A</strong> 16-Channel Discrete Input (110V)</td>
                         <td>2500 Classic - Digital Input</td>
@@ -215,6 +215,13 @@
                         <td><a href="#" class="download-link">Data Sheet (PDF)</a></td>
                     </tr>
                     <tr>
+                        <td class="part-name"><strong>2582</strong> 16-Point Isolated 125 VDC Input</td>
+                        <td>2500 Classic - Digital Input</td>
+                        <td><span class="status-badge status-active">Active</span></td>
+                        <td><span class="fw-code">N/A</span></td>
+                        <td><a href="#" class="download-link">Data Sheet (PDF)</a></td>
+                    </tr>
+                    <tr>
                         <td class="part-name"><strong>2590</strong> 16-Point Isolated AC Output Module</td>
                         <td>2500 Classic - Digital Output</td>
                         <td><span class="status-badge status-active">Active</span></td>
@@ -223,6 +230,27 @@
                     </tr>
                     <tr>
                         <td class="part-name"><strong>2591</strong> 16-Point Isolated DC Output Module</td>
+                        <td>2500 Classic - Digital Output</td>
+                        <td><span class="status-badge status-active">Active</span></td>
+                        <td><span class="fw-code">N/A</span></td>
+                        <td><a href="#" class="download-link">Data Sheet (PDF)</a></td>
+                    </tr>
+                    <tr>
+                        <td class="part-name"><strong>2596</strong> 8/16-Point 11-125 VDC Output Module</td>
+                        <td>2500 Classic - Digital Output</td>
+                        <td><span class="status-badge status-active">Active</span></td>
+                        <td><span class="fw-code">N/A</span></td>
+                        <td><a href="#" class="download-link">Data Sheet (PDF)</a></td>
+                    </tr>
+                    <tr>
+                        <td class="part-name"><strong>2596-8</strong> 8-Point DC Output Module</td>
+                        <td>2500 Classic - Digital Output</td>
+                        <td><span class="status-badge status-mature">Mature</span></td>
+                        <td><span class="fw-code">N/A</span></td>
+                        <td><a href="#" class="download-link">Replaced by 2596</a></td>
+                    </tr>
+                    <tr>
+                        <td class="part-name"><strong>2597</strong> 8/16/32-Point 11-125 VDC Output Module</td>
                         <td>2500 Classic - Digital Output</td>
                         <td><span class="status-badge status-active">Active</span></td>
                         <td><span class="fw-code">N/A</span></td>
@@ -243,7 +271,7 @@
                         <td><a href="#" class="download-link">Data Sheet (PDF)</a></td>
                     </tr>
 
-                    <!-- === 2500 SERIES CLASSIC: SPECIALTY & COMMUNICATIONS === -->
+                    <!-- === 2500 SERIES CLASSIC: SPECIALTY, TTL & COMMS === -->
                     <tr>
                         <td class="part-name"><strong>2500-RAM</strong> Input Simulator Module</td>
                         <td>2500 Classic - Specialty I/O</td>
@@ -257,6 +285,27 @@
                         <td><span class="status-badge status-mature">Mature</span></td>
                         <td><span class="fw-code">v2.01</span></td>
                         <td><a href="#" class="download-link">Installation (PDF)</a></td>
+                    </tr>
+                    <tr>
+                        <td class="part-name"><strong>2553-A</strong> 2-Channel Mag Meter Input Module</td>
+                        <td>2500 Classic - Specialty I/O</td>
+                        <td><span class="status-badge status-mature">Mature</span></td>
+                        <td><span class="fw-code">N/A</span></td>
+                        <td><a href="#" class="download-link">Product Details (PDF)</a></td>
+                    </tr>
+                    <tr>
+                        <td class="part-name"><strong>2585</strong> 16-Point Isolated TTL/Word Input</td>
+                        <td>2500 Classic - Specialty I/O</td>
+                        <td><span class="status-badge status-active">Active</span></td>
+                        <td><span class="fw-code">N/A</span></td>
+                        <td><a href="#" class="download-link">Data Sheet (PDF)</a></td>
+                    </tr>
+                    <tr>
+                        <td class="part-name"><strong>2595</strong> 16-Point TTL/Word Output Module</td>
+                        <td>2500 Classic - Specialty I/O</td>
+                        <td><span class="status-badge status-active">Active</span></td>
+                        <td><span class="fw-code">N/A</span></td>
+                        <td><a href="#" class="download-link">Data Sheet (PDF)</a></td>
                     </tr>
                     <tr>
                         <td class="part-name"><strong>2572-A</strong> Ethernet Communications Adapter</td>
@@ -324,7 +373,39 @@
                         <td><a href="#" class="download-link">Installation (PDF)</a></td>
                     </tr>
 
-                    <!-- === SERIES 500 SYSTEM MIGRATION/SUPPORT === -->
+                    <!-- === 2500 SERIES: SLICE I/O === -->
+                    <tr>
+                        <td class="part-name"><strong>2500S-23-1050</strong> Slice I/O (Ethernet, 4DI/4DO/2UAI/2AO)</td>
+                        <td>2500 Slice - Distributed I/O</td>
+                        <td><span class="status-badge status-mature">Mature</span></td>
+                        <td><span class="fw-code">v1.42</span></td>
+                        <td><a href="#" class="download-link">Product Notice (PDF)</a></td>
+                    </tr>
+                    <tr>
+                        <td class="part-name"><strong>2500S-26-1050</strong> Slice I/O (Ethernet, 8DIO/2UAI)</td>
+                        <td>2500 Slice - Distributed I/O</td>
+                        <td><span class="status-badge status-mature">Mature</span></td>
+                        <td><span class="fw-code">v1.42</span></td>
+                        <td><a href="#" class="download-link">Product Notice (PDF)</a></td>
+                    </tr>
+                    <tr>
+                        <td class="part-name"><strong>2500S-23-1550</strong> Slice I/O (RS232/485 Co-Processor)</td>
+                        <td>2500 Slice - Distributed I/O</td>
+                        <td><span class="status-badge status-mature">Mature</span></td>
+                        <td><span class="fw-code">v1.12</span></td>
+                        <td><a href="#" class="download-link">Legacy Support (PDF)</a></td>
+                    </tr>
+
+                    <!-- === INDUSTRIAL WORKSTATIONS & HMIs === -->
+                    <tr>
+                        <td class="part-name"><strong>2500-VP15A-N4-W7</strong> 15" Flat-Panel Touch PC (NEMA4)</td>
+                        <td>Industrial PC / HMI</td>
+                        <td><span class="status-badge status-mature">Mature</span></td>
+                        <td><span class="fw-code">Win7 / Custom</span></td>
+                        <td><a href="#" class="download-link">Hardware Guide (PDF)</a></td>
+                    </tr>
+
+                    <!-- === SERIES 500 SYSTEM MODERNIZATION & BASES === -->
                     <tr>
                         <td class="part-name"><strong>2500-IADP</strong> I/O Base Adapter for Series 500</td>
                         <td>Series 500 Upgrade</td>
@@ -333,7 +414,7 @@
                         <td><a href="#" class="download-link">Conversion Guide (PDF)</a></td>
                     </tr>
                     <tr>
-                        <td class="part-name"><strong>2500-PADP</strong> Power Supply Adapter for 500</td>
+                        <td class="part-name"><strong>2500-PADP</strong> Power Supply Adapter for 500 Bases</td>
                         <td>Series 500 Upgrade</td>
                         <td><span class="status-badge status-active">Active</span></td>
                         <td><span class="fw-code">N/A</span></td>
@@ -345,6 +426,20 @@
                         <td><span class="status-badge status-active">Active</span></td>
                         <td><span class="fw-code">N/A</span></td>
                         <td><a href="#" class="download-link">Modernization Info (PDF)</a></td>
+                    </tr>
+                    <tr>
+                        <td class="part-name"><strong>2500-R4500</strong> 520/530/DBC Adapter Base</td>
+                        <td>Series 500 Upgrade</td>
+                        <td><span class="status-badge status-mature">Mature</span></td>
+                        <td><span class="fw-code">N/A</span></td>
+                        <td><a href="#" class="download-link">Hardware Guide (PDF)</a></td>
+                    </tr>
+                    <tr>
+                        <td class="part-name"><strong>2500P-R16</strong> 16-Slot High-Speed Backplane Base Chassis</td>
+                        <td>2500 Classic - Hardware Base</td>
+                        <td><span class="status-badge status-active">Active</span></td>
+                        <td><span class="fw-code">N/A</span></td>
+                        <td><a href="#" class="download-link">Layout Spec (PDF)</a></td>
                     </tr>
                 </tbody>
             </table>
