@@ -8,6 +8,7 @@
 </head>
 <body>
 
+    <!-- --- Main Header & Navigation --- -->
     <header class="main-header">
         <h1>CTI</h1>
         <nav class="nav-menu">
@@ -17,6 +18,7 @@
         </nav>
     </header>
 
+    <!-- --- Hero Section --- -->
     <section class="hero-section">
         <p class="section-tag">Next-Generation PAC</p>
         <h2>Bridge the Gap to the IIoT Without the Rip-and-Replace Risk</h2>
@@ -27,6 +29,7 @@
         </div>
     </section>
 
+    <!-- --- Modernization Content Section --- -->
     <div id="modernization" class="modernization-section">
         <h3>Why Migrate When You Can Modernize?</h3>
         <p>Protect your decades of institutional engineering, wiring, and programming investments while gaining modern capabilities.</p>
@@ -41,14 +44,17 @@
         <p>Direct Ethernet, MQTT, and secure communications protocols built directly into the processor core.</p>
     </div>
 
+    <!-- --- Unified Search & Resource Portal Section --- -->
     <section id="search-portal" class="search-section">
         <div class="search-wrapper">
             <h2 style="color: #0f172a; margin-bottom: 10px; font-size: 24px;">Unified Resource & Firmware Portal</h2>
             <p style="color: #64748b; margin-bottom: 25px; font-size: 15px;">Instant access to technical specifications, manuals, and active firmware revisions.</p>
             
+            <!-- Real-time Interactive Search Input -->
             <input type="text" id="partSearch" placeholder="Type a part number or series (e.g., 2500, Janus, ACP1)...">
         </div>
 
+        <!-- Dynamic Data Grid -->
         <div class="table-responsive" style="max-width: 900px; margin: 0 auto;">
             <table class="search-table">
                 <thead>
@@ -61,6 +67,7 @@
                     </tr>
                 </thead>
                 <tbody>
+                    <!-- === PROCESSORS & COPROCESSORS === -->
                     <tr>
                         <td class="part-name"><strong>2500P-J750</strong> Janus PAC</td>
                         <td>Processor</td>
@@ -76,6 +83,29 @@
                         <td><a href="#" class="download-link">Tech Advisory (PDF)</a></td>
                     </tr>
                     <tr>
+                        <td class="part-name"><strong>2500P-JACP</strong> Janus Coprocessor</td>
+                        <td>Coprocessor</td>
+                        <td><span class="status-badge status-active">Active</span></td>
+                        <td><span class="fw-code">v1.06</span></td>
+                        <td><a href="#" class="download-link">Datasheet (PDF)</a></td>
+                    </tr>
+                    <tr>
+                        <td class="part-name"><strong>2500P-C400</strong> High-Performance Processor</td>
+                        <td>Processor</td>
+                        <td><span class="status-badge status-active">Active</span></td>
+                        <td><span class="fw-code">v9.21</span></td>
+                        <td><a href="#" class="download-link">User Manual (PDF)</a></td>
+                    </tr>
+                    <tr>
+                        <td class="part-name"><strong>2500-C200</strong> Classic Processor</td>
+                        <td>Processor</td>
+                        <td><span class="status-badge status-mature">Mature</span></td>
+                        <td><span class="fw-code">v9.21</span></td>
+                        <td><a href="#" class="download-link">User Manual (PDF)</a></td>
+                    </tr>
+
+                    <!-- === ANALOG I/O === -->
+                    <tr>
                         <td class="part-name"><strong>2550-A</strong> I/O Module</td>
                         <td>Analog Input</td>
                         <td><span class="status-badge status-active">Active</span></td>
@@ -90,21 +120,6 @@
                         <td><a href="#" class="download-link">Data Sheet (PDF)</a></td>
                     </tr>
                     <tr>
-                        <td class="part-name"><strong>2500-RAM</strong> Input Simulator</td>
-                        <td>Specialty I/O</td>
-                        <td><span class="status-badge status-active">Active</span></td>
-                        <td><span class="fw-code">N/A</span></td>
-                        <td><a href="#" class="download-link">Installation (PDF)</a></td>
-                    </tr>
-                    
-                    <tr>
-                        <td class="part-name"><strong>2500P-JACP</strong> Janus Coprocessor</td>
-                        <td>Coprocessor</td>
-                        <td><span class="status-badge status-active">Active</span></td>
-                        <td><span class="fw-code">v1.06</span></td>
-                        <td><a href="#" class="download-link">Datasheet (PDF)</a></td>
-                    </tr>
-                    <tr>
                         <td class="part-name"><strong>2557-A</strong> 8-Channel Analog Input</td>
                         <td>Analog Input</td>
                         <td><span class="status-badge status-active">Active</span></td>
@@ -112,17 +127,64 @@
                         <td><a href="#" class="download-link">Installation (PDF)</a></td>
                     </tr>
                     <tr>
-                        <td class="part-name"><strong>2500-C200</strong> Classic Processor</td>
-                        <td>Processor</td>
+                        <td class="part-name"><strong>2558-A</strong> 8-Channel Isolated Analog Output</td>
+                        <td>Analog Output</td>
+                        <td><span class="status-badge status-active">Active</span></td>
+                        <td><span class="fw-code">N/A</span></td>
+                        <td><a href="#" class="download-link">Wiring Guide (PDF)</a></td>
+                    </tr>
+
+                    <!-- === DISCRETE I/O & SPECIALTY === -->
+                    <tr>
+                        <td class="part-name"><strong>2511-A</strong> 16-Channel Discrete Input (110V)</td>
+                        <td>Discrete Input</td>
+                        <td><span class="status-badge status-active">Active</span></td>
+                        <td><span class="fw-code">N/A</span></td>
+                        <td><a href="#" class="download-link">Wiring Guide (PDF)</a></td>
+                    </tr>
+                    <tr>
+                        <td class="part-name"><strong>2521-A</strong> 16-Channel Discrete Output (110V)</td>
+                        <td>Discrete Output</td>
+                        <td><span class="status-badge status-active">Active</span></td>
+                        <td><span class="fw-code">N/A</span></td>
+                        <td><a href="#" class="download-link">Data Sheet (PDF)</a></td>
+                    </tr>
+                    <tr>
+                        <td class="part-name"><strong>2500-RAM</strong> Input Simulator</td>
+                        <td>Specialty I/O</td>
+                        <td><span class="status-badge status-active">Active</span></td>
+                        <td><span class="fw-code">N/A</span></td>
+                        <td><a href="#" class="download-link">Installation (PDF)</a></td>
+                    </tr>
+                    <tr>
+                        <td class="part-name"><strong>2532</strong> 4-Channel Counter/Totalizer Module</td>
+                        <td>Specialty I/O</td>
                         <td><span class="status-badge status-mature">Mature</span></td>
-                        <td><span class="fw-code">v9.21</span></td>
+                        <td><span class="fw-code">v2.01</span></td>
+                        <td><a href="#" class="download-link">Installation (PDF)</a></td>
+                    </tr>
+
+                    <!-- === COMMUNICATIONS === -->
+                    <tr>
+                        <td class="part-name"><strong>2572-A</strong> Ethernet Communications Adapter</td>
+                        <td>Communications</td>
+                        <td><span class="status-badge status-active">Active</span></td>
+                        <td><span class="fw-code">v2.32</span></td>
                         <td><a href="#" class="download-link">User Manual (PDF)</a></td>
+                    </tr>
+                    <tr>
+                        <td class="part-name"><strong>2573</strong> Serial Communications Adapter</td>
+                        <td>Communications</td>
+                        <td><span class="status-badge status-mature">Mature</span></td>
+                        <td><span class="fw-code">v1.15</span></td>
+                        <td><a href="#" class="download-link">Tech Advisory (PDF)</a></td>
                     </tr>
                 </tbody>
             </table>
         </div>
     </section>
 
+    <!-- --- JavaScript Interactive Filter --- -->
     <script>
     document.getElementById('partSearch').addEventListener('keyup', function() {
         let searchQuery = this.value.toLowerCase();
