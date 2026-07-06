@@ -21,6 +21,26 @@ const productsData = [
         specs: ["Project Memory: 3MB", "Form Factor: Compact", "Native IIoT Protocols"]
     },
     {
+        id: "2500-C300",
+        name: "2500-C300 Classic CPU",
+        category: "Processor",
+        line: "2500 Classic",
+        status: "Active",
+        firmware: "v9.21",
+        description: "Mid-range plug-and-play classic CPU replacement featuring 512K of user memory, designed for standard automation tasks within existing 2500 Series/Simatic 505 footprints.",
+        specs: ["User Memory: 512K", "Execution Speed: 0.1ms/K", "RBC Support: Up to 7 bases"]
+    },
+    {
+        id: "2500-C200",
+        name: "2500-C200 Classic CPU",
+        category: "Processor",
+        line: "2500 Classic",
+        status: "Mature",
+        firmware: "v9.21",
+        description: "Compact classic CPU replacement featuring 256K of user memory. This module provides direct mechanical and functional compatibility for legacy system maintenance.",
+        specs: ["User Memory: 256K", "Execution Speed: 0.1ms/K", "Lifecycle Status: Mature Support"]
+    },
+    {
         id: "2500-C400",
         name: "2500-C400 Classic CPU",
         category: "Processor",
