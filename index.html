@@ -8,7 +8,6 @@
 </head>
 <body>
 
-    <!-- --- Main Header & Navigation --- -->
     <header class="main-header">
         <h1>CTI</h1>
         <nav class="nav-menu">
@@ -18,7 +17,6 @@
         </nav>
     </header>
 
-    <!-- --- Hero Section --- -->
     <section class="hero-section">
         <p class="section-tag">Next-Generation PAC</p>
         <h2>Bridge the Gap to the IIoT Without the Rip-and-Replace Risk</h2>
@@ -29,7 +27,6 @@
         </div>
     </section>
 
-    <!-- --- Modernization Content Section --- -->
     <div id="modernization" class="modernization-section">
         <h3>Why Migrate When You Can Modernize?</h3>
         <p>Protect your decades of institutional engineering, wiring, and programming investments while gaining modern capabilities.</p>
@@ -44,17 +41,14 @@
         <p>Direct Ethernet, MQTT, and secure communications protocols built directly into the processor core.</p>
     </div>
 
-    <!-- --- Unified Search & Resource Portal Section --- -->
     <section id="search-portal" class="search-section">
         <div class="search-wrapper">
             <h2 style="color: #0f172a; margin-bottom: 10px; font-size: 24px;">Unified Resource & Firmware Portal</h2>
             <p style="color: #64748b; margin-bottom: 25px; font-size: 15px;">Instant access to technical specifications, manuals, and active firmware revisions.</p>
             
-            <!-- Real-time Interactive Search Input -->
-            <input type="text" id="partSearch" placeholder="Type a part number, family, or feature (e.g., Janus, Compact, RBC, Power Supply, Slice)...">
+            <input type="text" id="partSearch" placeholder="Type a part number, family, or feature (e.g., Janus, Compact, RBC, Modbus, 2573)...">
         </div>
 
-        <!-- Dynamic Data Grid -->
         <div class="table-responsive" style="max-width: 1000px; margin: 0 auto; overflow-x: auto;">
             <table class="search-table">
                 <thead>
@@ -67,7 +61,6 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <!-- === 2500 SERIES CLASSIC: PROCESSORS & COPROCESSORS === -->
                     <tr>
                         <td class="part-name"><strong>2500P-J750</strong> Janus PAC (3MB Project Memory)</td>
                         <td>2500 Classic - Processor</td>
@@ -125,7 +118,6 @@
                         <td><a href="#" class="download-link">User Manual (PDF)</a></td>
                     </tr>
 
-                    <!-- === 2500 SERIES CLASSIC: RBCs & POWER SUPPLIES === -->
                     <tr>
                         <td class="part-name"><strong>2500-RBC</strong> Remote Base Controller (Profibus)</td>
                         <td>2500 Classic - RBC</td>
@@ -155,7 +147,6 @@
                         <td><a href="#" class="download-link">Data Sheet (PDF)</a></td>
                     </tr>
 
-                    <!-- === 2500 SERIES CLASSIC: ANALOG I/O === -->
                     <tr>
                         <td class="part-name"><strong>2550-A</strong> Analog Input Module (8-Channel)</td>
                         <td>2500 Classic - Analog I/O</td>
@@ -185,7 +176,6 @@
                         <td><a href="#" class="download-link">Wiring Guide (PDF)</a></td>
                     </tr>
 
-                    <!-- === 2500 SERIES CLASSIC: DIGITAL I/O & HIGH DENSITY === -->
                     <tr>
                         <td class="part-name"><strong>2511-A</strong> 16-Channel Discrete Input (110V)</td>
                         <td>2500 Classic - Digital Input</td>
@@ -271,7 +261,27 @@
                         <td><a href="#" class="download-link">Data Sheet (PDF)</a></td>
                     </tr>
 
-                    <!-- === 2500 SERIES CLASSIC: SPECIALTY, TTL & COMMS === -->
+                    <tr>
+                        <td class="part-name"><strong>2572-A</strong> Ethernet Communications Adapter</td>
+                        <td>2500 Classic - Communications</td>
+                        <td><span class="status-badge status-active">Active</span></td>
+                        <td><span class="fw-code">v2.32</span></td>
+                        <td><a href="#" class="download-link">User Manual (PDF)</a></td>
+                    </tr>
+                    <tr>
+                        <td class="part-name"><strong>2573</strong> Serial Communications Adapter</td>
+                        <td>2500 Classic - Communications</td>
+                        <td><span class="status-badge status-mature">Mature</span></td>
+                        <td><span class="fw-code">v1.15</span></td>
+                        <td><a href="#" class="download-link">Tech Advisory (PDF)</a></td>
+                    </tr>
+                    <tr>
+                        <td class="part-name"><strong>2573-MOD</strong> Serial/Ethernet Modbus Adapter</td>
+                        <td>2500 Classic - Communications</td>
+                        <td><span class="status-badge status-active">Active</span></td>
+                        <td><span class="fw-code">v4.06</span></td>
+                        <td><a href="#" class="download-link">User Manual (PDF)</a></td>
+                    </tr>
                     <tr>
                         <td class="part-name"><strong>2500-RAM</strong> Input Simulator Module</td>
                         <td>2500 Classic - Specialty I/O</td>
@@ -307,22 +317,7 @@
                         <td><span class="fw-code">N/A</span></td>
                         <td><a href="#" class="download-link">Data Sheet (PDF)</a></td>
                     </tr>
-                    <tr>
-                        <td class="part-name"><strong>2572-A</strong> Ethernet Communications Adapter</td>
-                        <td>2500 Classic - Communications</td>
-                        <td><span class="status-badge status-active">Active</span></td>
-                        <td><span class="fw-code">v2.32</span></td>
-                        <td><a href="#" class="download-link">User Manual (PDF)</a></td>
-                    </tr>
-                    <tr>
-                        <td class="part-name"><strong>2573</strong> Serial Communications Adapter</td>
-                        <td>2500 Classic - Communications</td>
-                        <td><span class="status-badge status-mature">Mature</span></td>
-                        <td><span class="fw-code">v1.15</span></td>
-                        <td><a href="#" class="download-link">Tech Advisory (PDF)</a></td>
-                    </tr>
 
-                    <!-- === 2500 SERIES COMPACT LINE === -->
                     <tr>
                         <td class="part-name"><strong>2500C-2572</strong> Compact Ethernet Adapter</td>
                         <td>2500 Compact - Communications</td>
@@ -373,7 +368,6 @@
                         <td><a href="#" class="download-link">Installation (PDF)</a></td>
                     </tr>
 
-                    <!-- === 2500 SERIES: SLICE I/O === -->
                     <tr>
                         <td class="part-name"><strong>2500S-23-1050</strong> Slice I/O (Ethernet, 4DI/4DO/2UAI/2AO)</td>
                         <td>2500 Slice - Distributed I/O</td>
@@ -396,7 +390,6 @@
                         <td><a href="#" class="download-link">Legacy Support (PDF)</a></td>
                     </tr>
 
-                    <!-- === INDUSTRIAL WORKSTATIONS & HMIs === -->
                     <tr>
                         <td class="part-name"><strong>2500-VP15A-N4-W7</strong> 15" Flat-Panel Touch PC (NEMA4)</td>
                         <td>Industrial PC / HMI</td>
@@ -405,7 +398,6 @@
                         <td><a href="#" class="download-link">Hardware Guide (PDF)</a></td>
                     </tr>
 
-                    <!-- === SERIES 500 SYSTEM MODERNIZATION & BASES === -->
                     <tr>
                         <td class="part-name"><strong>2500-IADP</strong> I/O Base Adapter for Series 500</td>
                         <td>Series 500 Upgrade</td>
@@ -446,7 +438,6 @@
         </div>
     </section>
 
-    <!-- --- JavaScript Interactive Filter --- -->
     <script>
     document.getElementById('partSearch').addEventListener('keyup', function() {
         let searchQuery = this.value.toLowerCase();
